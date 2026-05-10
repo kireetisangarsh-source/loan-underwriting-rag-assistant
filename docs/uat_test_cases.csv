@@ -1,0 +1,9 @@
+test_case_id,test_scenario,expected_result,status
+UAT001,Generate loan application dataset,250000 loan applications should be created,Pass
+UAT002,Search valid application ID,Application details should be displayed,Pass
+UAT003,Search invalid application ID,Application not found message should be displayed,Pass
+UAT004,Ask underwriting policy question,Relevant policy document should be retrieved,Pass
+UAT005,Ask disbursement policy question,Disbursement policy should be retrieved,Pass
+UAT006,Check KPI dashboard,Approval rejection and manual review rates should display,Pass
+UAT007,Check risk category chart,Risk category distribution should display,Pass
+UAT008,Check lifecycle stage chart,Application stage distribution should display,Pass

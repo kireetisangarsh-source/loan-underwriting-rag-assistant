@@ -1,0 +1,11 @@
+Loan Underwriting Policy
+
+Loan applications must be reviewed based on credit score, annual income, debt-to-income ratio, employment status, requested loan amount, and loan purpose.
+
+Applicants with a credit score below 600 are considered high risk and are generally not eligible for automatic approval.
+
+Applicants with a debt-to-income ratio above 50 percent are considered high risk and should be rejected or sent for additional manual review.
+
+Applicants with stable employment, credit score above 700, and debt-to-income ratio below 40 percent are generally eligible for approval.
+
+Applications requiring additional risk review should be routed to the underwriting review stage before approval or rejection.

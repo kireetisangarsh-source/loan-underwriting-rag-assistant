@@ -1,0 +1,15 @@
+Credit Eligibility Rules
+
+Minimum credit score for approval is 600.
+
+Credit score between 600 and 699 may require manual underwriting review depending on debt-to-income ratio and requested loan amount.
+
+Credit score of 700 or above is considered strong if the applicant also has acceptable income and debt-to-income ratio.
+
+Debt-to-income ratio should generally be 40 percent or lower for low-risk approval.
+
+Debt-to-income ratio above 50 percent exceeds the standard policy limit.
+
+Unemployed applicants are not eligible for automatic approval and require rejection or manual exception handling.
+
+Requested loan amount should be reasonable compared to annual income.

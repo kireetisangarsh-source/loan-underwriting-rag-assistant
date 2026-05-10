@@ -1,0 +1,11 @@
+Loan Disbursement Policy
+
+Approved loans can move to disbursement only after identity verification, income verification, document verification, and final underwriting approval are completed.
+
+Applications in manual review cannot be disbursed until the underwriting team completes risk review.
+
+Rejected applications are not eligible for disbursement.
+
+Disbursement should only occur after approval status is marked as Approved.
+
+Processing time should be monitored across application intake, document verification, underwriting review, approval decision, and disbursement stages.
