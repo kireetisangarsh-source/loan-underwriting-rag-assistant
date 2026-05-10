@@ -1,170 +1,71 @@
-\# Loan Underwriting Policy RAG Assistant
+# Loan Underwriting RAG Assistant
 
+This project is a loan underwriting assistant built with Python and Streamlit. It helps answer questions about loan approval rules, credit eligibility, risk review, and disbursement policies.
 
+The project uses local text documents as the knowledge base and retrieves the most relevant policy section using TF-IDF vector search. It also includes a loan application lookup and a small KPI dashboard for underwriting analysis.
 
-Loan Underwriting Policy RAG Assistant is a corporate-style RAG project that answers loan underwriting, credit eligibility, approval, rejection, and disbursement policy questions using local policy documents and synthetic loan application data.
+## Why I built this
 
+I wanted to create a project close to a real business analyst workflow in a loan processing environment. The goal was to connect policy rules with application data and make it easier to understand why a loan is approved, rejected, or sent for manual review.
 
+## Features
 
-\## Project Overview
+- Ask questions about loan underwriting policies
+- Retrieve relevant policy context from local documents
+- Search a loan application by application ID
+- Explain approval, rejection, or manual review decisions
+- View approval, rejection, and manual review rates
+- Analyze risk category and loan lifecycle stage distribution
+- Work with 250,000 synthetic loan application records
 
+## Tech Stack
 
+- Python
+- Streamlit
+- Pandas
+- Scikit-learn
+- TF-IDF Vector Search
+- Cosine Similarity
+- Plotly
 
-This project simulates a financial loan processing workflow. It uses TF-IDF vector search and cosine similarity to retrieve relevant policy context from underwriting, credit eligibility, and disbursement documents. It also includes application lookup, approval decision explanation, KPI dashboard, and synthetic loan lifecycle data.
-
-
-
-\## Business Context
-
-
-
-Loan processing teams need to validate applicant eligibility, underwriting rules, risk scoring, approval decisions, and disbursement readiness. This project simulates that workflow using structured loan application records and unstructured policy documents.
-
-
-
-\## Features
-
-
-
-\- Local RAG-style policy assistant
-
-\- 250,000 synthetic loan application records
-
-\- Underwriting policy retrieval
-
-\- Credit eligibility rule retrieval
-
-\- Disbursement policy retrieval
-
-\- Loan application lookup
-
-\- Approval and rejection explanation
-
-\- KPI dashboard
-
-\- Approval rate, rejection rate, and manual review rate
-
-\- Risk category distribution
-
-\- Loan lifecycle stage tracking
-
-\- Business rules documentation
-
-\- UAT test cases
-
-
-
-\## Tech Stack
-
-
-
-Python, Streamlit, Pandas, Scikit-learn, TF-IDF Vector Search, Cosine Similarity, Plotly
-
-
-
-\## Project Structure
-
-
+## Project Structure
 
 loan-underwriting-rag-assistant/
-
 ├── data/
-
-│   ├── loan\_applications.csv
-
-│   ├── underwriting\_policy.txt
-
-│   ├── credit\_eligibility\_rules.txt
-
-│   └── disbursement\_policy.txt
-
 ├── docs/
-
-│   ├── business\_rules.md
-
-│   └── uat\_test\_cases.csv
-
 ├── src/
-
-│   ├── generate\_loan\_data.py
-
-│   ├── rag\_pipeline.py
-
-│   └── loan\_analysis.py
-
 ├── app.py
-
 ├── requirements.txt
+└── README.md
 
-├── README.md
+## How to Run
 
-└── .gitignore
-
-
-
-\## How to Run
-
-
-
-1\. Create virtual environment
-
-
+Create and activate a virtual environment:
 
 python -m venv .venv
 
+.venv\Scripts\Activate.ps1
 
-
-2\. Activate virtual environment
-
-
-
-.venv\\Scripts\\Activate.ps1
-
-
-
-3\. Install dependencies
-
-
+Install dependencies:
 
 pip install -r requirements.txt
 
+Generate the loan data:
 
+python src\generate_loan_data.py
 
-4\. Generate loan data
-
-
-
-python src\\generate\_loan\_data.py
-
-
-
-5\. Run Streamlit app
-
-
+Run the app:
 
 streamlit run app.py
 
+## Sample Questions
 
+- What is the minimum credit score for approval?
+- Can an applicant with DTI above 50 percent be approved?
+- Can rejected applications move to disbursement?
+- Which applications require manual underwriting review?
+- What documents are required before disbursement?
 
-\## Sample Questions
+## Notes
 
-
-
-\- Can an applicant with DTI above 50 percent be approved?
-
-\- What is the minimum credit score for approval?
-
-\- Can rejected applications move to disbursement?
-
-\- What documents are required before disbursement?
-
-\- Which applicants require manual underwriting review?
-
-
-
-\## Resume Summary
-
-
-
-Built a corporate-style loan underwriting RAG assistant using Python, Streamlit, Pandas, Scikit-learn, and TF-IDF vector search to answer policy questions, explain loan decisions, track lifecycle stages, and monitor underwriting KPIs across 250K synthetic loan applications.
-
+This project uses synthetic data only. It does not contain real customer or financial data.
